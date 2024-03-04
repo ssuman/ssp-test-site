@@ -1,8 +1,8 @@
 const auctionConfig = {
-  seller: "https://ssp-test-bucket.s3.us-west-2.amazonaws.com/",
+  seller: "https://glowing-clafoutis-3f5037.netlify.app/",
 
-  decisionLogicUrl: `https://ssp-test-bucket.s3.us-west-2.amazonaws.com/ssp/decision-logic.js`,
-  trustedScoringSignalsUrl: `https://ssp-test-bucket.us-west-2.amazonaws.com/ssp/kv.json`,
+  decisionLogicUrl: `https://glowing-clafoutis-3f5037.netlify.app/ssp/decision-logic.js`,
+  trustedScoringSignalsUrl: `https://glowing-clafoutis-3f5037.netlify.app/ssp/kv.json`,
 
   interestGroupBuyers: [
     // * is not supported yet
