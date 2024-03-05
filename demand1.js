@@ -49,14 +49,14 @@ document.getElementById("books").addEventListener("click", function () {
   const interestGroup = {
     name: igName,
     owner,
-    biddingLogicUrl: `${igOwner}/dsp1.js`,
-    trustedBiddingSignalsUrl: `${igOwner}/dsp1-bidding_signal-1.json`,
+    biddingLogicUrl: `${owner}/dsp1.js`,
+    trustedBiddingSignalsUrl: `${owner}/dsp1-bidding_signal-1.json`,
     trustedBiddingSignalsKeys: ["remainingBudget", "arbitrary-key"],
-    dailyUpdateUrl: `${igOwner}/dsp1-daily_update_url-${igName}.json`,
+    dailyUpdateUrl: `${owner}/dsp1-daily_update_url-${igName}.json`,
     userBiddingSignals: { user_bidding_signals: "user_bidding_signals" },
     ads: [
       {
-        renderUrl: `${igOwner}/advertiser/${igName}-ad-1.html`,
+        renderUrl: `${owner}/advertiser/${igName}-ad-1.html`,
         metadata: {
           type: igName,
           crid: `${igName}_ad_1_crid`,
@@ -69,7 +69,7 @@ document.getElementById("books").addEventListener("click", function () {
         },
       },
       {
-        renderUrl: `${igOwner}/advertiser/${igName}-ad-2.html`,
+        renderUrl: `${owner}/advertiser/${igName}-ad-2.html`,
         metadata: {
           type: igName,
           crid: `${igName}_ad_2_crid`,
