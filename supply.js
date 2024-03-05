@@ -6,7 +6,7 @@ const auctionConfig = {
 
   interestGroupBuyers: [
     // * is not supported yet
-    "https://dsp1-test-bucket.s3.us-west-2.amazonaws.com/",
+    "https://retail-dsp-suman.netlify.app/",
   ],
   // public for everyone
   auctionSignals: { auction_signals: "auction_signals" },
@@ -20,7 +20,7 @@ const auctionConfig = {
   // only for single party
   perBuyerSignals: {
     // listed on interestGroupByers
-    [`https://dsp1-test-bucket.s3.us-west-2.amazonaws.com/`]: {
+    [`https://retail-dsp-suman.netlify.app/`]: {
       buyerdata: "per_buyer_signals",
     },
   },
