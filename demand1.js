@@ -1,4 +1,4 @@
-let owner = "https://retail-dsp-suman.netlify.app/";
+let owner = "https://retail-dsp-suman.netlify.app";
 
 document.getElementById("shoes").addEventListener("click", function () {
   let igName = "shoes";
