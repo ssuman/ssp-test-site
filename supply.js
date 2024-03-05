@@ -1,8 +1,8 @@
 const auctionConfig = {
-  seller: "https://glowing-clafoutis-3f5037.netlify.app/",
+  seller: "https://pub-suman.netlify.app",
 
-  decisionLogicUrl: `https://glowing-clafoutis-3f5037.netlify.app/ssp/decision-logic.js`,
-  trustedScoringSignalsUrl: `https://glowing-clafoutis-3f5037.netlify.app/ssp/kv.json`,
+  decisionLogicUrl: `https://pub-suman.netlify.app/ssp/decision-logic.js`,
+  trustedScoringSignalsUrl: `https://pub-suman.netlify.app/ssp/kv.json`,
 
   interestGroupBuyers: [
     // * is not supported yet
