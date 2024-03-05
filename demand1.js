@@ -1,13 +1,15 @@
-let owner = "";
+let owner = "https://retail-dsp-suman.netlify.app/";
 
 document.getElementById("shoes").addEventListener("click", function () {
+  let igName = "shoes";
+
   const interestGroup = {
-    name: "shoes",
+    name: igName,
     owner,
-    biddingLogicUrl: `${owner}/dsp/bidding-logic.js`,
-    trustedBiddingSignalsUrl: `${owner}/dsp/bidding_signal-1.json`,
+    biddingLogicUrl: `${owner}/dsp1.js`,
+    trustedBiddingSignalsUrl: `${owner}/dsp1-bidding_signal-1.json`,
     trustedBiddingSignalsKeys: ["remainingBudget", "arbitrary-key"],
-    dailyUpdateUrl: `${owner}/dsp/daily_update_url-${igName}.json`,
+    dailyUpdateUrl: `${owner}/dsp1-daily_update_url-${igName}.json`,
     userBiddingSignals: { user_bidding_signals: "user_bidding_signals" },
     ads: [
       {
@@ -47,36 +49,34 @@ document.getElementById("books").addEventListener("click", function () {
   const interestGroup = {
     name: igName,
     owner,
-    biddingLogicUrl: `${igOwner}/dsp/bidding-logic.js`,
-    trustedBiddingSignalsUrl: `${igOwner}/dsp/bidding_signal-1.json`,
+    biddingLogicUrl: `${igOwner}/dsp1.js`,
+    trustedBiddingSignalsUrl: `${igOwner}/dsp1-bidding_signal-1.json`,
     trustedBiddingSignalsKeys: ["remainingBudget", "arbitrary-key"],
-    dailyUpdateUrl: `${igOwner}/dsp/daily_update_url-${igName}.json`,
-    biddingLogicUrl: `${igOwner}/dsp/bidding-logic.js`,
-    dailyUpdateUrl: `${igOwner}/dsp/daily_update_url-${igName2}.json`,
+    dailyUpdateUrl: `${igOwner}/dsp1-daily_update_url-${igName}.json`,
     userBiddingSignals: { user_bidding_signals: "user_bidding_signals" },
     ads: [
       {
-        renderUrl: `${igOwner}/advertiser/${igName2}-ad-1.html`,
+        renderUrl: `${igOwner}/advertiser/${igName}-ad-1.html`,
         metadata: {
-          type: igNameExternal,
-          crid: `${igName2External}_ad_1_crid`,
-          cid: `${igName2External}_ad_1_cid`,
+          type: igName,
+          crid: `${igName}_ad_1_crid`,
+          cid: `${igName}_ad_1_cid`,
           cat: ["IAB-1"],
-          seat: `${igName2External}_ad_1_seat_id`,
-          adomain: [`${igName2External}_ad_1_adomain.com`],
+          seat: `${igName}_ad_1_seat_id`,
+          adomain: [`${igName}_ad_1_adomain.com`],
           w: 300,
           h: 250,
         },
       },
       {
-        renderUrl: `${igOwner}/advertiser/${igName2}-ad-2.html`,
+        renderUrl: `${igOwner}/advertiser/${igName}-ad-2.html`,
         metadata: {
-          type: igNameExternal,
-          crid: `${igName2External}_ad_2_crid`,
-          cid: `${igName2External}_ad_2_cid`,
+          type: igName,
+          crid: `${igName}_ad_2_crid`,
+          cid: `${igName}_ad_2_cid`,
           cat: ["IAB-2"],
-          seat: `${igName2External}_ad_2_seat_id`,
-          adomain: [`${igName2External}_ad_2_adomain.com`],
+          seat: `${igName}_ad_2_seat_id`,
+          adomain: [`${igName}_ad_2_adomain.com`],
           w: 300,
           h: 250,
         },
