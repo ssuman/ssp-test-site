@@ -21,3 +21,17 @@ function generateBid(
     allowComponentAuction: true,
   };
 }
+
+function reportWin(
+  auctionSignals,
+  perBuyerSignals,
+  sellerSignals,
+  browserSignals,
+  directFromSellerSignals
+) {
+  console.log(auctionSignals);
+  console.log(perBuyerSignals);
+  console.log(sellerSignals);
+  console.log(browserSignals);
+  console.log(directFromSellerSignals);
+}
